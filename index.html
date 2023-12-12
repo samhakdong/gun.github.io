@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-</head>
-<body>
-  <p>Hello, World!</p>
-</body>
-</html>
+import streamlit as st
+
+col1, col2 = st.columns(2)
+with col1:
+    st.image('독도.jpg', width=300)
+with col2:
+    st.write('으락캬')
+    '전화번호(☎) : 010-xxx-xxxx'
+    '이메일(📧) : supershy@konyang.ac.kr'
+    '주소(🏚️) 충청남도 논산시 대학로 121'
+
+col = st.columns(4)
+with col[0]:
+    st.link_button("Google(🌎)", "https://google.com/")
+with col[1]:
+    st.link_button("Naver(✔️)", "https://www.naver.com/")
+with col[2]:
+    st.link_button("Daum(☑️)", "https://www.daum.net/")
+with col[3]:
+    st.link_button("Facebook(🇫)", "https://www.facebook.com/")
